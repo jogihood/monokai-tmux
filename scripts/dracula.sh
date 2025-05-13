@@ -363,9 +363,9 @@ main() {
 
   # Window option
   if $show_powerline; then
-    tmux set-window-option -g window-status-current-format "#[fg=${window_sep_fg},bg=${window_sep_bg}]${window_sep}#[fg=${white},bg=${orange}] #I #W${current_flags} #[fg=${orange},bg=${bg_color}]${left_sep}"
+    tmux set-window-option -g window-status-current-format "#[fg=${window_sep_fg},bg=${window_sep_bg}]${window_sep}#[fg=${dark_gray},bg=${orange}] #I #W${current_flags} #[fg=${orange},bg=${bg_color}]${left_sep}"
   else
-    tmux set-window-option -g window-status-current-format "#[fg=${white},bg=${orange}] #I #W${current_flags} "
+    tmux set-window-option -g window-status-current-format "#[fg=${dark_gray},bg=${orange}] #I #W${current_flags} "
   fi
 
   tmux set-window-option -g window-status-format "#[fg=${white}]#[bg=${bg_color}] #I #W${flags}"
