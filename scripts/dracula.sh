@@ -41,17 +41,17 @@ main() {
   show_empty_plugins=$(get_tmux_option "@dracula-show-empty-plugins" true)
 
   # Dracula Color Pallette
-  white="#f8f8f2"
-  gray="#44475a"
-  dark_gray="#282a36"
-  light_purple="#bd93f9"
-  dark_purple="#6272a4"
-  cyan="#8be9fd"
-  green="#50fa7b"
-  orange="#ffb86c"
-  red="#ff5555"
-  pink="#ff79c6"
-  yellow="#f1fa8c"
+  white='#f8f8f2'
+  gray='#808080'
+  dark_gray='#272822'
+  light_purple='#b392ef'
+  dark_purple='#ae81ff'
+  cyan='#66d9ef'
+  green='#a6e22e'
+  orange='#ff8000'
+  red='#dd4278'
+  pink='#f92672'
+  yellow='#e6db74'
 
   # Override default colors and possibly add more
   colors="$(get_tmux_option "@dracula-colors" "")"
@@ -61,7 +61,7 @@ main() {
 
   # Set transparency variables - Colors and window dividers
   if $transparent_powerline_bg; then
-	bg_color="default"
+	  bg_color="default"
 	if $show_edge_icons; then
 	  window_sep_fg=${dark_purple}
 	  window_sep_bg=default
@@ -72,14 +72,14 @@ main() {
 	  window_sep="$show_inverse_divider"
 	fi
   else
-    bg_color=${gray}
+    bg_color=${dark_gray}
     if $show_edge_icons; then
       window_sep_fg=${dark_purple}
       window_sep_bg=${gray}
       window_sep="$show_inverse_divider"
     else
-      window_sep_fg=${gray}
-      window_sep_bg=${dark_purple}
+      window_sep_fg=${dark_gray}
+      window_sep_bg=${orange}
       window_sep="$show_left_sep"
     fi
   fi
