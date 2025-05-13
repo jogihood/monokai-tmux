@@ -40,7 +40,7 @@ main() {
   IFS=' ' read -r -a plugins <<< $(get_tmux_option "@dracula-plugins" "battery network weather")
   show_empty_plugins=$(get_tmux_option "@dracula-show-empty-plugins" true)
 
-  # Dracula Color Pallette
+  # Monokai Color Pallette
   white='#f8f8f2'
   gray='#808080'
   dark_gray='#272822'
@@ -62,15 +62,15 @@ main() {
   # Set transparency variables - Colors and window dividers
   if $transparent_powerline_bg; then
 	  bg_color="default"
-	if $show_edge_icons; then
-	  window_sep_fg=${orange}
-	  window_sep_bg=default
-	  window_sep="$show_right_sep"
-	else
-	  window_sep_fg=${orange}
-	  window_sep_bg=default
-	  window_sep="$show_inverse_divider"
-	fi
+  	if $show_edge_icons; then
+  	  window_sep_fg=${orange}
+  	  window_sep_bg=default
+  	  window_sep="$show_right_sep"
+  	else
+  	  window_sep_fg=${orange}
+  	  window_sep_bg=default
+  	  window_sep="$show_inverse_divider"
+  	fi
   else
     bg_color=${dark_gray}
     if $show_edge_icons; then
@@ -129,7 +129,7 @@ main() {
       current_flags="";;
     true)
       flags="#{?window_flags,#[fg=${dark_purple}]#{window_flags},}"
-      current_flags="#{?window_flags,#[fg=${light_purple}]#{window_flags},}"
+      current_flags="#{?window_flags,#[fg=${orange}]#{window_flags},}"
   esac
 
   # sets refresh interval to every 5 seconds
