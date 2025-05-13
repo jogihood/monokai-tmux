@@ -63,19 +63,19 @@ main() {
   if $transparent_powerline_bg; then
 	  bg_color="default"
 	if $show_edge_icons; then
-	  window_sep_fg=${dark_purple}
+	  window_sep_fg=${orange}
 	  window_sep_bg=default
 	  window_sep="$show_right_sep"
 	else
-	  window_sep_fg=${dark_purple}
+	  window_sep_fg=${orange}
 	  window_sep_bg=default
 	  window_sep="$show_inverse_divider"
 	fi
   else
     bg_color=${dark_gray}
     if $show_edge_icons; then
-      window_sep_fg=${dark_purple}
-      window_sep_bg=${gray}
+      window_sep_fg=${orange}
+      window_sep_bg=${dark_gray}
       window_sep="$show_inverse_divider"
     else
       window_sep_fg=${dark_gray}
