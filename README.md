@@ -1,4 +1,4 @@
-# Dracula for [tmux](https://github.com/tmux/tmux/wiki)
+# Monokai theme for [tmux](https://github.com/tmux/tmux/wiki) from [Dracula](https://github.com/dracula/tmux)
 
 > A dark theme for [tmux](https://github.com/tmux/tmux/wiki)
 
